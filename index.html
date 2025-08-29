@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lider Brasil Informática</title>
+    <meta name="description" content="Otimize a gestão de funcionários com os sistemas de controle de ponto da Lider Brasil Informática. Relógios de ponto eletrônicos modernos e seguros. Solicite um orçamento!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <header class="header">
+        <div class="header-container">
+            <img src="./assets/images/logo.png" alt="Lider Brasil Informática" class="logo">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <a href="https://wa.me/5522999342494?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+rel%C3%B3gio+de+ponto." target="_blank" class="cta-button">
+                    <img src="./assets/images/whatslogo.png" alt="whatsApp Icon" class="whatsapp-icon-img">
+                    <span class="cta-text">Fale Agora</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="hero-section" class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Sua empresa ainda está sem <span class="highlight">controle de ponto inteligente?</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Atrasos, falhas no controle de ponto e registros manuais colocam sua empresa em risco e isso pode custar muito caro, mas com o relógio de ponto control ID instalado pela Líder Brasil, você transforma sua gestão em minutos.
+                </p>
+                 <a href="https://wa.me/5522999342494?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+rel%C3%B3gio+de+ponto." target="_blank" class="cta-button">
+                    <img src="./assets/images/whatslogo.png" alt="whatsApp Icon" class="whatsapp-icon-img">
+                    <span>Fale Agora no WhatsApp</span>
+                </a>
+                <div id="canvas-container"></div>
+            </div>
+        </section>
+        <section id="product-highlight-section" class="product-highlight-section">
+            <div class="product-highlight-container">
+                <h2 class="product-highlight-title">Conheça o Relógio de Ponto Control ID</h2>
+                <p class="product-highlight-subtitle">
+                    O Control ID é a solução definitiva para a gestão de ponto da sua empresa. Combinando tecnologia de ponta, robustez e conformidade, ele oferece tudo o que você precisa para otimizar processos e garantir a segurança jurídica.
+                </p>
+                <div class="product-feature-block">
+                    <div class="product-media-wrapper">
+                        <div class="video-responsive-wrapper">
+                            <iframe
+                                src="https://www.youtube.com/embed/El1qVmgZvr4"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <img src="./assets/images/sobreproduto.webp" alt="Detalhe do Relogio" class="product-media-image">
+                    </div>
+                    <div class="product-features-column">
+                        <ul class="product-features-list">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Identificação biométrica e senha para máxima segurança e precisão.
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-printer">
+                                    <polyline points="6 9 6 2 18 2 18 9"/>
+                                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                                    <rect width="12" height="8" x="6" y="14"/>
+                                </svg>
+                                Mecanismo impressor térmico de alta velocidade e robustez com guilhotina.
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-receipt-text">
+                                    <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2h-2h-2h-2h-2h-2h-2H4Z"/>
+                                    <path d="M14 8H8"/>
+                                    <path d="M16 12H8"/>
+                                    <path d="M16 16H8"/>
+                                </svg>
+                                Capacidade para bobina de até 400m, garantindo autonomia.
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-network">
+                                    <rect x="16" y="2" width="6" height="6" rx="1"/>
+                                    <rect x="2" y="16" width="6" height="6" rx="1"/>
+                                    <path d="M16 8v6a2 2 0 0 0 2 2h4"/>
+                                    <path d="M2 8v6a2 2 0 0 1 2 2h4"/>
+                                    <line x1="10" x2="14" y1="12" y2="12"/>
+                                </svg>
+                                Comunicação TCP/IP, web server embarcado e duas portas USB. Wi-Fi e GPRS opcionais.
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/5522999342494?text=Ol%C3%A1%21+Gostaria+de+um+or%C3%A7amento+para+o+rel%C3%B3gio+de+ponto+Control+ID." target="_blank" class="cta-button product-cta-button">
+                            <img src="./assets/images/whatslogo.png" alt="WhatsApp Icon" class="whatsapp-icon-img">
+                            <span>Solicite um Orçamento</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="benefits-section" class="benefits-section">
+            <div class="benefits-container">
+                <h2 class="section-title">Por que escolher a <span class="highlight"> Líder Brasil </span> para instalar seu Relógio de Ponto?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <img src="./assets/images/instalcaao.webp" alt="Instalacao">
+                        <h3>Instalação em até 48h</h3>
+                        <p>Profissionais experientes, sem dor de cabeça.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <img src="./assets/images/manutencao.webp" alt="Manutencao">
+                        <h3>Manutenção Garantida</h3>
+                        <p>Suporte rápido e confiável.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <img src="./assets/images/manutencao.webp" alt="Produto Homologado pelo MTE">
+                        <h3>Homologado pelo MTE</h3>
+                        <p>Garantia de qualidade e conformidade com as normas trabalhistas.</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/5522999342494?text=Ol%C3%A1%21+Quero+saber+mais+sobre+o+relogio+de+ponto+Control+ID." target="_blank" class="cta-button new-cta-style">
+                    <img src="./assets/images/whatslogo.png" alt="WhatsApp Icon" class="whatsapp-icon-img">
+                    Faça seu orçamento agora!
+                </a>
+            </div>
+        </section>
+        <section id="social-proof-section" class="social-proof-section">
+            <div class="social-proof-container">
+                <h2 class="section-title">Empresas que já <span class="highlight">confiam na Líder Brasil</span></h2>
+                <div class="video-testimonials-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/jAdqwj9v7eg?si=hGLGWfWcwXmI3Y-a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <p class="video-description">Instalação de catraca super rápida em uma academia e o atendimento foi avaliado em nota 5!</p>
+                    </div>
+                   <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe width="315" height="560" src="https://www.youtube.com/embed/kI6gsvyCTMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <p class="video-description">Nosso suporte é excelente, estamos sempre prontos para ajudar.</p>
+                    </div>
+                     <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe width="315" height="560" src="https://www.youtube.com/embed/GC_2zTKz1YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <p class="video-description">A gestão de ponto nunca foi tão fácil e segura com os nossos serviços!</p>
+                    </div>
+                </div>
+                <div class="testimonials-carousel-container">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <img src="./assets/images/cliente1.webp" alt="Foto do Cliente" class="testimonial-avatar">
+                                    <p class="testimonial-text">"Fui muito bem atendido desde o primeiro contato. A equipe não se limitou a me ajudar a encontrar exatamente o que eu precisava, com atenção aos detalhes e total transparência. O suporte pós-venda também me surpreendeu positivamente. Recomendo sem pensar duas vezes!"</p>
+                                    <p class="testimonial-author">Wagner Robson Antunes</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <img src="./assets/images/cliente2.webp" alt="Foto do Cliente 2" class="testimonial-avatar">
+                                    <p class="testimonial-text">"O suporte técnico foi excepcional! Resolveram meu problema com rapidez e ainda me orientaram sobre a melhor forma de usar o equipamento. Atendimento de primeira."</p>
+                                    <p class="testimonial-author">André Silva</p>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <img src="./assets/images/cliente3.webp" alt="Foto da Cliente 3" class="testimonial-avatar">
+                                    <p class="testimonial-text">"Bom relógio de ponto funciona certinho na minha loja, do jeito que a gente precisava. Simplificou muito o nosso dia a dia."</p>
+                                    <p class="testimonial-author">Tatiane Ribeiro</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <img src="./assets/images/cliente4.webp" alt="Foto do Cliente 4" class="testimonial-avatar">
+                                    <p class="testimonial-text">"A implementação foi tranquila e a equipe de suporte nos deu todo o apoio necessário. O sistema é robusto e atende todas as nossas necessidades de controle de ponto."</p>
+                                    <p class="testimonial-author">João Pereira</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                <img src="./assets/images/cliente5.webp" alt="Foto da Cliente" class="testimonial-avatar">
+                                <p   p class="testimonial-text">"No começo ficamos receosos com a mudança, mas logo vimos como o sistema era fácil de usar. O suporte foi essencial nos primeiros dias, sempre rápido e claro nas respostas. Hoje conseguimos acompanhar os horários da equipe com muito mais precisão."</p>
+                                <p class="testimonial-author">César Souza</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+          <section class="final-cta-section">
+            <div class="social-proof-container">
+                 <h2 class="section-title">Mais de <span class="highlight">200 empresas</span> já <span class="highlight">otimizaram</span> sua <span class="highlight">gestão</span> com a gente</h2>
+                 <p class="final-cta-subtitle">Faça parte desse grupo e tenha uma instalação profissional e rápida. Fale agora com um consultor!</p>
+                 <a href="https://wa.me/5522999342494?text=Ol%C3%A1%21+Quero+saber+mais+sobre+o+Control+ID." target="_blank" class="cta-button">
+                     <img src="./assets/images/whatslogo.png" alt="WhatsApp Icon" class="whatsapp-icon-img" onerror="this.style.display='none'">
+                     Fale agora no WhatsApp
+                 </a>
+            </div>
+        </section>
+        <section id="reasons-section" class="reasons-section">
+            <div class="reasons-container">
+                <h2 class="section-title">Por que sua empresa <span class="highlight">PRECISA</span> de um Relógio de Ponto?</h2>
+                <div class="reason-block">
+                    <div class="reason-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                    </div>
+                    <div class="reason-content">
+                        <h3>Otimize a Jornada de Trabalho</h3>
+                        <p>Garanta o registro preciso das horas, evite erros manuais e otimize a gestão da jornada de cada colaborador. O resultado é mais produtividade e total conformidade com a lei.</p>
+                    </div>
+                </div>
+                <div class="reason-block">
+                     <div class="reason-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                    </div>
+                    <div class="reason-content">
+                        <h3>Segurança Jurídica e Conformidade Total</h3>
+                        <p>Evite processos trabalhistas e multas. Nossos relógios são homologados pelo MTE, garantindo que sua empresa esteja sempre protegida e em dia com as exigências legais.</p>
+                    </div>
+                </div>
+                <div class="reason-block">
+                     <div class="reason-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <div class="reason-content">
+                        <h3>Redução de Custos e Fraudes</h3>
+                        <p>Monitore horas extras, atrasos e faltas com eficiência. A automação do controle de ponto minimiza fraudes e erros, gerando uma economia real e maior controle financeiro.</p>
+                    </div>
+                </div>
+                <p class="final-quote">Faça sua cotação agora mesmo em <span class="highlight-red">minutos</span> com atendentes reais.</p>
+                <a href="https://wa.me/5522999342494?text=Ol%C3%A1%21+Quero+saber+mais+sobre+o+Control+ID." target="_blank" class="cta-button final-cta-button">
+                        <img src="./assets/images/whatslogo.png" alt="WhatsApp Icon" class="whatsapp-icon-img">
+                        Fale agora no WhatsApp
+                </a>
+            </div>
+        </section>
+        <section id="quote-form-section" class="quote-form-section">
+            <div class="quote-form-container">
+                <div class="quote-form-content">
+                    <div class="quote-form-text">
+                        <h2 class="section-title">Atendimento em menos de <span class="highlight-red">10 minutos.</span></h2>
+                        <p>Preencha o formulário ao lado e um de nossos especialistas entrará em contato para oferecer a melhor solução em controle de ponto para a sua empresa. Simples, rápido e sem burocracia!</p>
+                    </div>
+                    <div class="quote-form-card">
+                        <h3>Solicite sua Cotação</h3>
+                        <form id="quoteForm">
+                            <div class="form-group">
+                                <label for="companyName">Nome da Empresa (Razão Social):</label>
+                                <input type="text" id="companyName" name="companyName" placeholder="Ex: Sua Empresa S.A." required>
+                            </div>
+                            <div class="form-group">
+                                <label>Quantidade de Funcionários:</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="numEmployees" value="10-100" required>
+                                        10 - 100
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="numEmployees" value="200-300">
+                                        200 - 300
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="numEmployees" value="400+">
+                                        400 ou mais
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="submit-button">
+                                Enviar Cotação via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="final-branding-section">
+            <div class="final-branding-container">
+                <div class="final-logos">
+                    <img src="./assets/images/controlid.webp" alt="Logo Control iD">
+                    <img src="./assets/images/lbhorizontal.webp" alt="Logo LB">
+                </div>
+                <p class="final-branding-tagline">
+                    Tecnologia de ponta da Control iD, com suporte especializado da nossa equipe!
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo-col">
+                <img src="./assets/images/lbhorizontal.webp" alt="Logo Líder Brasil" class="footer-logo">
+                <div class="footer-summary-text">
+                    <p>Sua parceira em soluções de TI, oferecendo uma linha completa de produtos, serviços especializados de montagem e manutenção, além de soluções inteligentes para controle de ponto.</p>
+                </div>
+            </div>
+            <div class="footer-navigation">
+                <h4>Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero-section">Início</a></li>
+                    <li><a href="#benefits-section">Benefícios</a></li>
+                    <li><a href="#product-highlight-section">Relógio de Ponto</a></li>
+                    <li><a href="#reasons-section">Motivos</a></li>
+                    <li><a href="#quote-form-section">Cotação</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-info">
+                <h4>Contatos Rápidos</h4>
+                <div class="footer-contact-buttons">
+                    <a href="https://wa.me/5522999342494?text=Ol%C3%A1%21" target="_blank" class="footer-contact-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone">
+                           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        WhatsApp
+                    </a>
+                    <a href="mailto:contato@liderbrasilinformatica.com.br" class="footer-contact-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail">
+                            <rect width="20" height="16" x="2" y="4" rx="2"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                        E-mail
+                    </a>
+                </div>
+                <div class="footer-social-media">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/liderbrasilinformatica/" target="_blank" class="social-icon-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" x2="17.5" y1="6.5" y2="6.5"/>
+                            </svg>
+                            Instagram
+                        </a>
+                        <a href="https://web.facebook.com/liderbrasilinformatica/?locale=pt_BR&_rdc=1&_rdr#" target="_blank" class="social-icon-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                            Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copyright">&copy; 2024 Líder Brasil Informática. Todos os direitos reservados.</p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
